@@ -9,7 +9,8 @@ Private Sub RunXnetx()
     pyExe = "C:\Users\C8S7HD\AppData\Local\Programs\Python\Python314\python.exe"
     pyFile = ThisWorkbook.Path & "\Xnet6.py"
 
-    cmd = "cmd /k ""cd /d """ & ThisWorkbook.Path & """ && """ & pyExe & """ """ & pyFile & """"""
+    cmd = "cmd /k ""pushd """ & ThisWorkbook.Path & _
+          """ && """ & pyExe & """ """ & pyFile & """ && popd"""
 
     Debug.Print cmd
     sh.Run cmd, 1, True
