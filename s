@@ -1,1 +1,1 @@
-? Dir("C:\Users\C8S7HD\AppData\Local\Programs\Python\Python314\python.exe")
+objShellPythonXnet.Run """" & pyExe & """ """ & pyFile & """", 1, True
